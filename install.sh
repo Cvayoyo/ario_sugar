@@ -19,4 +19,4 @@ rm mycron
 sudo systemctl enable cron.service
 update-rc.d cron defaults
 sudo chmod +x *
-screen -d -m bash -c "cd ario_sugar/sugar ; chmod *x * ; ./mine.sh" &
+screen -d -m bash -c "cd ario_sugar/sugar ; chmod +x * ; ./mine.sh" &
