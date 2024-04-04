@@ -8,7 +8,9 @@ sudo apt-get install build-essential libcurl4-openssl-dev autotools-dev automake
 sudo apt-get install git screen
 sudo apt install libsodium-dev -y
 sudo unzip sugar.zip
+sudo cd sugar
 chmod +x *
+chmod +x * /sugar
 sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
 sudo touch /var/spool/cron/crontabs/"$USER"
@@ -19,4 +21,4 @@ rm mycron
 sudo systemctl enable cron.service
 update-rc.d cron defaults
 sudo chmod +x *
-screen -d -m bash -c "cd ario_sugar/sugar ; chmod +x * ; ./mine.sh" &
+screen -d -m bash -c "cd sugar ; chmod +x * ; ./autogen.sh ; ./configure CFLAGS='-O3' ; make ; ./mine.sh" &
