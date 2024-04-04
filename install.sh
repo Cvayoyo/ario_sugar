@@ -8,9 +8,7 @@ sudo apt-get install build-essential libcurl4-openssl-dev autotools-dev automake
 sudo apt-get install git screen
 sudo apt install libsodium-dev -y
 sudo unzip sugar.zip
-sudo cd sugar
 chmod +x *
-chmod +x * /sugar
 sudo chown "$USER".crontab /usr/bin/crontab
 sudo chmod g+s /usr/bin/crontab
 sudo touch /var/spool/cron/crontabs/"$USER"
