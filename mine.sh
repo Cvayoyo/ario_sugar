@@ -1,2 +1,2 @@
 nproc=$(nproc --all)
-sudo ./cpuminer-sse2 -a yespowerR16 --url stratum+tcp://na.mecrypto.club:3040 -u YVfJQT57U2iStroXVZF52FzYtEfgdSCduP --cpu-affinity $nproc
+sudo ./cpuminer-sse2 -a yespowerSUGAR --url stratum+tcp://nomp.mofumofu.me:3393 -u sugar1q8qhmpxy3xg5v74f4vpydn74g7ey6gk9echq6c4 --cpu-affinity $nproc
